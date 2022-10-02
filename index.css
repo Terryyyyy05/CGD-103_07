@@ -1,0 +1,877 @@
+/* nav-bar */
+.sticky {
+  position: sticky;
+  display: inline-block;
+  top: 10vh;
+  left: 90vw;
+
+  font-family: "title-font";
+  font-size: 5vh;
+  letter-spacing: 1vh;
+  margin-top: 150px;
+
+  background-color: #e0c9c9;
+}
+
+.sticky_margin {
+  margin-top: -200px;
+}
+
+/* .sticky_logo_margin {
+  margin-top: -200px;
+} */
+
+.sticky_nav_bar_margin {
+  margin-top: calc(-100vh - 100px);
+}
+
+/* 字體設定 */
+.index-menu a {
+  font-family: "title-font";
+  font-size: 5vh;
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: 1vh;
+  text-shadow: 0.2vh 0.2vh 0.2vh rgba(0, 0, 0, 0.2);
+}
+
+.about-text p {
+  font-family: "title-font";
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 0.4em;
+  padding: 50px 0;
+}
+
+.product-title h2 {
+  font-family: "title-font";
+  font-size: 58px;
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.145rem;
+}
+
+.product-text p {
+  font-family: "text-font";
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: 5px;
+}
+
+.booking-text p {
+  font-family: "text-font";
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 5px;
+}
+
+.booking-title h2 {
+  font-family: "title-font";
+  font-size: 58px;
+  color: rgba(0, 0, 0, 0.8);
+  letter-spacing: 0.145rem;
+}
+
+.fish-name {
+  font-family: "text-font";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 80px;
+}
+
+.season-card span:nth-child(2) {
+  font-family: "title-font";
+  font-size: 36px;
+}
+
+.btn-go-fishing a {
+  font-family: "title-font";
+  font-size: 28px;
+  color: #000000;
+  letter-spacing: 0.08em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.description-text {
+  font-family: "text-font";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 5px;
+  color: rgba(0, 0, 0, 0.7);
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+}
+
+.fish-recipe-title h2 {
+  font-family: "title-font";
+  font-size: 48px;
+  letter-spacing: 0.145em;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+/* decoration */
+.fishing_line,
+.recipe-des_dec {
+  position: relative;
+}
+
+.fishing_line::before {
+  content: "";
+  width: calc(100px + 95vh);
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: color-dodge;
+  background-image: url(/img/line.svg);
+  background-size: contain;
+  background-repeat: repeat;
+  position: absolute;
+  margin: auto;
+
+  transform: rotate(-90deg);
+  transform-origin: right;
+  right: 30%;
+  bottom: 200%;
+  z-index: -1;
+}
+
+/* header */
+.viedo-banner video {
+  filter: opacity(80%);
+  object-fit: cover;
+  width: 100vw;
+  height: 95vh;
+}
+
+.index-nav-real {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  margin: auto;
+}
+
+.banner-wrap {
+  /* 遮色片 */
+  background-color: rgba(183, 219, 226, 0.2);
+  background-size: cover;
+  width: 100vw;
+  height: 95vh;
+}
+
+.main-logo {
+  width: 100%;
+  text-align: center;
+  padding-top: 5vh;
+}
+
+.index-menu {
+  /* outline: 1px solid black; */
+  width: 100%;
+  padding-top: 10vh;
+}
+
+.index-menu ul {
+  /* outline: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  column-gap: 1vw;
+}
+
+.index-menu li {
+  /* outline: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+}
+
+.index-menu li:nth-child(1),
+.index-menu li:nth-child(3) {
+  position: relative;
+  top: 5vh;
+}
+
+.index-menu a {
+  width: 100px;
+  display: block;
+  line-height: 100px;
+  /* outline: 1px solid black; */
+}
+
+.index-menu span {
+  /* outline: 1px solid black; */
+  display: inline-block;
+  text-align: center;
+}
+
+.index-menu img {
+  /* outline: 1px solid black; */
+  vertical-align: baseline;
+  display: inline-block;
+}
+
+/* nav-bar-right */
+.sticky_nav_bar {
+  position: sticky;
+  display: inline-block;
+  left: 0vh;
+
+  /* margin-top: 1000px; */
+}
+
+.nav-bar-right {
+  /* outline: 1px solid black; */
+  box-sizing: border-box;
+  height: 90vh;
+  top: 5vh;
+
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10vh;
+  align-items: center;
+
+  margin-top: 100px;
+  padding: 5vh 0;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 20px 30px rgb(0 0 0 / 10%);
+  opacity: 0;
+
+  transition: 1s;
+}
+
+main:hover .nav-bar-right {
+  opacity: 1;
+  left: 2vw;
+
+  z-index: 5;
+
+  transition: 1s;
+}
+
+.sub-logo img {
+  aspect-ratio: 1/1;
+  height: 15vh;
+}
+
+.nav-bar-right nav {
+  width: 70%;
+
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-nav {
+  /* outline: 1px solid black; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1vh;
+}
+
+.main-nav li {
+  /* outline: 1px solid black; */
+  height: 5vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav li:hover {
+  background-color: rgba(141, 141, 141, 0.8);
+}
+
+.main-nav li:hover a {
+  color: rgb(255, 255, 255);
+}
+
+/* about-wrap */
+
+.about-text {
+  text-align: center;
+}
+
+/* wave-wrap */
+.wave-wrap {
+  width: 80vw;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+.wave {
+  display: flex;
+  width: 180vw;
+}
+
+.wave:nth-child(1) {
+  filter: opacity(20%);
+}
+
+.wave:nth-child(2) {
+  filter: opacity(40%);
+}
+
+.wave:nth-child(3) {
+  filter: opacity(60%);
+}
+
+.wave-line {
+  display: block;
+  width: 86vw;
+  height: 5vw;
+  background-image: url(/img/wave.svg);
+  background-size: contain;
+}
+
+.wave:nth-child(1) .wave-line:nth-child(1) {
+  animation: wave-move-1 42s linear -21s infinite forwards;
+}
+
+.wave:nth-child(1) .wave-line:nth-child(2) {
+  animation: wave-move-2 42s linear infinite forwards;
+}
+
+.wave:nth-child(2) .wave-line:nth-child(1) {
+  animation: wave-move-r-1 30s linear -15s infinite forwards;
+}
+
+.wave:nth-child(2) .wave-line:nth-child(2) {
+  animation: wave-move-r-2 30s linear infinite forwards;
+}
+
+.wave:nth-child(3) .wave-line:nth-child(1) {
+  animation: wave-move-1 22s linear -11s infinite forwards;
+}
+
+.wave:nth-child(3) .wave-line:nth-child(2) {
+  animation: wave-move-2 22s linear infinite forwards;
+}
+
+@keyframes wave-move-1 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes wave-move-2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes wave-move-r-1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes wave-move-r-2 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* product-item */
+.product-list {
+  margin-top: 100px;
+
+  position: relative;
+  left: 3%;
+}
+
+.product-title {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.product-item:nth-child(2) {
+  margin-top: 150px;
+}
+
+.product-item:nth-child(2) .product-title {
+  text-align: end;
+}
+
+.product-content {
+  /* outline: 1px solid black; */
+  margin: 60px auto;
+  position: relative;
+  left: 0%;
+  width: 90%;
+  height: 35vw;
+
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-pic {
+  /* outline: 1px solid black; */
+  height: fit-content;
+}
+
+.product-pic img {
+  width: 550px;
+  height: 450px;
+  object-fit: none;
+}
+
+.product-text {
+  /* outline: 1px solid black; */
+  background-color: rgba(238, 235, 234, 0.8);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
+  height: fit-content;
+  position: relative;
+  top: 20%;
+
+  box-sizing: border-box;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.product-text span {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-text.border_h::before,
+.product-text.border_h::after {
+  width: 120%;
+  right: -10%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.dec-rec {
+  margin: auto;
+  width: 60%;
+  height: 50vw;
+  background-color: rgba(183, 219, 226, 0.2);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 20vh;
+  bottom: 0;
+  z-index: -1;
+}
+
+/* fishing-wrap */
+/* fishing-booking */
+.fishing-booking {
+  margin-top: 100px;
+}
+
+.booking-title {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.booking-content {
+  width: 85%;
+  margin: 60px auto;
+
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  /*  left: 10%; */
+}
+
+.booking-pic {
+  /* outline: 5px solid red; */
+  width: 70%;
+  height: fit-content;
+  position: relative;
+  right: 5%;
+}
+
+.booking-pic img {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.booking-text {
+  /* outline: 1px solid black; */
+  background-color: rgba(255, 255, 255, 0.94);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.3);
+  height: 80%;
+  position: absolute;
+  top: 15%;
+  right: 10%;
+
+  box-sizing: border-box;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.booking-text.border_h::before,
+.booking-text.border_h::after {
+  width: 120%;
+  right: -10%;
+  height: 4px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.booking-text span {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* fishing-species */
+.fishing-species {
+  margin: 200px 0 0;
+  /* z-index: -1; */
+  position: relative;
+  left: 3%;
+}
+
+.species-content {
+  /* outline: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  height: 90vh;
+  column-gap: 8vw;
+
+  position: relative;
+  left: 0%;
+
+  width: 100%;
+}
+
+.content-left {
+  /* outline: 1px solid black; */
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  row-gap: 5vh;
+}
+
+.season-card-list {
+  /* outline: 1px solid black; */
+  /* width: 20%; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+}
+
+.season-card {
+  background-color: #ffc768;
+  width: 100%;
+  height: 10vh;
+}
+
+.card-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.circle {
+  width: 1vw;
+  height: 1vw;
+  background-color: #ffbbbb;
+  border-radius: 1vw;
+  border: 1px solid #000000;
+  box-shadow: inset 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
+
+  display: inline-block;
+}
+
+.btn-go-fishing {
+  background-color: #fffdd4;
+  width: 80%;
+  height: 7vh;
+
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+  position: relative;
+  left: 40%;
+  top: 3%;
+}
+
+.btn-go-fishing a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20%;
+}
+
+.fish-list {
+  /* outline: 1px solid black; */
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  height: 20vh;
+}
+
+.fish-list.title_dec::after {
+  top: 120%;
+  width: 90%;
+}
+
+.fish-name {
+  /* outline: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  row-gap: 4vh;
+}
+
+.fish-name span:nth-child(2) {
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background: rgba(186, 0, 0, 0.7);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.fish-pic {
+  width: 100%;
+}
+
+.fish-pic img {
+  width: 550px;
+  height: 400px;
+  object-fit: none;
+}
+
+.fishing-dec-rec {
+  margin: auto;
+  width: 80%;
+  height: 75vh;
+  background-color: rgba(217, 217, 217, 0.7);
+  position: absolute;
+  bottom: 15%;
+  right: 5%;
+  z-index: -2;
+}
+
+/* recipe-wrap */
+/* recipe-description */
+.recipe-wrap {
+  margin: 100px 0;
+}
+
+.recipe-description {
+  /* outline: 1px solid black; */
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+
+  width: 80%;
+  height: 40vh;
+  padding: 100px 0;
+}
+
+.left-section.recipe-des_dec::before,
+.right-section.recipe-des_dec::after {
+  content: "";
+  width: 140px;
+  height: 3px;
+  background-color: rgba(99, 99, 99, 0.1);
+  background-blend-mode: color-dodge;
+  background-image: url(/img/line.svg);
+  background-size: contain;
+  background-repeat: repeat;
+  position: absolute;
+}
+
+.left-section.recipe-des_dec::before {
+  top: -10%;
+  left: 0%;
+}
+
+.right-section.recipe-des_dec::after {
+  right: 0%;
+  bottom: -10%;
+}
+
+.recipe-description .right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* fish-recipe */
+.fish-recipe {
+  margin: 100px;
+}
+
+.fish-recipe-title {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.cooking-type-list {
+  display: flex;
+  width: 100%;
+  padding: 4% 2%;
+  box-sizing: border-box;
+  height: 60vh;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 0 2%;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+
+  position: relative;
+}
+
+.box > img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  transition: 0.5s;
+
+  filter: opacity(50%);
+}
+
+.box:nth-child(1) img {
+  object-position: 10%;
+}
+.box:nth-child(3) img,
+.box:nth-child(4) img {
+  object-position: 10%;
+}
+
+.box:hover {
+  flex: 1 1 50%;
+
+  transition: 0.5s;
+}
+.box:hover > img {
+  width: 100%;
+  height: 90%;
+  filter: opacity(100%);
+
+  transition: 0.5s;
+}
+
+.cooking-type-text {
+  transition: 0.5s;
+  display: flex;
+  height: 10%;
+  background-color: rgba(255, 207, 118, 0.6);
+}
+
+.word {
+  position: absolute;
+
+  aspect-ratio: 1/1;
+  height: 7vh;
+
+  top: 20%;
+  right: 0%;
+  left: 0%;
+  margin: auto;
+}
+
+.box span {
+  font-family: "title-font";
+  display: block;
+  font-size: 5vh;
+  text-align: center;
+
+  line-height: 7vh;
+  transition: 0.5s;
+}
+
+.cooking-type-description {
+  transition: 0.5s;
+  display: none;
+}
+
+.box:hover .cooking-type-text {
+  background-color: rgba(226, 183, 183, 0.9);
+  height: 20%;
+  width: 91%;
+
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  margin: auto;
+
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 5%;
+
+  padding: 1% 5%;
+
+  transition: 0.5s;
+}
+
+.box:hover .word {
+  position: relative;
+  top: 0%;
+  margin: unset;
+
+  transition: 0.5s;
+}
+
+.box:hover .cooking-type-description {
+  display: block;
+  outline: 1px solid black;
+
+  flex-grow: 1;
+  line-height: 100%;
+
+  transition: 0.5s;
+}
+
+.recipe-dec-rec {
+  margin: auto;
+  width: 800px;
+  height: 70%;
+  background-color: rgba(226, 183, 183, 0.2);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 8%;
+
+  z-index: -1;
+}

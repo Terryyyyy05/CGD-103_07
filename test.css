@@ -1,0 +1,226 @@
+.ot {
+  outline: 1px solid black;
+}
+
+.tt {
+  background-color: rgb(255, 151, 151);
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c_container {
+  width: 100%;
+  max-width: 1200px;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  height: 110vh;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.c_text {
+  display: none;
+}
+
+.c_cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.c_card {
+  aspect-ratio: 4/3;
+  height: 30vh;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  transition: transform 0.4s ease;
+  cursor: pointer;
+}
+
+.c_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .c_cards #boat-5,
+#item-2:checked ~ .c_cards #boat-1,
+#item-3:checked ~ .c_cards #boat-2,
+#item-4:checked ~ .c_cards #boat-3,
+#item-5:checked ~ .c_cards #boat-4 {
+  transform: translatex(-60%) scale(0.8);
+  opacity: 0.8;
+  z-index: 0;
+}
+
+#item-1:checked ~ .c_cards #boat-2,
+#item-2:checked ~ .c_cards #boat-3,
+#item-3:checked ~ .c_cards #boat-4,
+#item-4:checked ~ .c_cards #boat-5,
+#item-5:checked ~ .c_cards #boat-1 {
+  transform: translatex(60%) scale(0.8);
+  opacity: 0.8;
+  z-index: 0;
+}
+
+#item-1:checked ~ .c_cards #boat-4,
+#item-2:checked ~ .c_cards #boat-5,
+#item-3:checked ~ .c_cards #boat-1,
+#item-4:checked ~ .c_cards #boat-2,
+#item-5:checked ~ .c_cards #boat-3 {
+  transform: translatex(-100%) scale(0.6);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#item-1:checked ~ .c_cards #boat-3,
+#item-2:checked ~ .c_cards #boat-4,
+#item-3:checked ~ .c_cards #boat-5,
+#item-4:checked ~ .c_cards #boat-1,
+#item-5:checked ~ .c_cards #boat-2 {
+  transform: translatex(100%) scale(0.6);
+  opacity: 0.6;
+  z-index: -1;
+}
+
+#item-1:checked ~ .c_cards #boat-1,
+#item-2:checked ~ .c_cards #boat-2,
+#item-3:checked ~ .c_cards #boat-3,
+#item-4:checked ~ .c_cards #boat-4,
+#item-5:checked ~ .c_cards #boat-5 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
+}
+
+#item-1:checked ~ .c_cards #boat-1 p,
+#item-2:checked ~ .c_cards #boat-2 p,
+#item-3:checked ~ .c_cards #boat-3 p,
+#item-4:checked ~ .c_cards #boat-4 p,
+#item-5:checked ~ .c_cards #boat-5 p {
+  display: block;
+}
+
+#item-1:checked ~ .c_cards #boat-1 img,
+#item-2:checked ~ .c_cards #boat-2 img,
+#item-3:checked ~ .c_cards #boat-3 img,
+#item-4:checked ~ .c_cards #boat-4 img,
+#item-5:checked ~ .c_cards #boat-5 img {
+  box-shadow: 0px 0px 5px 0px rgba(81, 81, 81, 0.47);
+}
+
+.c_booking {
+  background-color: rgb(232, 255, 252);
+  border-radius: 8px;
+  width: 80%;
+  padding: 16px 10px;
+}
+
+.upper-part {
+  position: relative;
+  display: flex;
+
+  margin-bottom: 12px;
+  height: 60px; /* 重要 */
+  overflow: hidden;
+}
+
+.info-area {
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  /* right: 0;
+  margin: auto; */
+  transition: transform 0.4s ease-in;
+}
+
+.song-info {
+  width: 100%;
+  display: block;
+}
+
+.song-info .title {
+  color: #403d40;
+  font-size: 38px;
+  line-height: 42px; /* 重要 */
+}
+
+.sub-line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.subtitle,
+.type {
+  font-size: 16px;
+  line-height: 18px; /* 重要 */
+  color: #c6c5c6;
+}
+
+.type {
+  font-size: 16px;
+  line-height: 18px; /* 重要 */
+  color: #a5a5a5;
+  font-weight: 500;
+  margin-left: auto;
+}
+
+#item-2:checked ~ .c_booking #test {
+  transform: translateY(0);
+}
+
+#item-2:checked ~ .c_booking #test {
+  transform: translateY(-60px);
+}
+
+#item-3:checked ~ .c_booking #test {
+  transform: translateY(-120px);
+}
+
+#item-4:checked ~ .c_booking #test {
+  transform: translateY(-180px);
+}
+
+#item-5:checked ~ .c_booking #test {
+  transform: translateY(-240px);
+}
+
+.c_booking_paper {
+  margin-top: 5%;
+}
+
+.paper_column {
+  display: flex;
+  column-gap: 10%;
+}
+
+.paper_column h3 {
+  margin-left: 20%;
+  text-align: center;
+}
+
+.paper_column input {
+  width: 40%;
+
+  align-self: center;
+
+  height: 42px;
+}

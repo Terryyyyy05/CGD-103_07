@@ -1,0 +1,483 @@
+/* 字體設定 */
+.product-text p {
+  font-family: "text-font";
+  font-size: 3vh;
+}
+
+.product-title-card span:nth-child(2) {
+  font-family: "title-font";
+  font-size: 5vh;
+  letter-spacing: 1vh;
+}
+
+/* decoration */
+.card_line::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: color-dodge;
+  background-image: url(/img/line.svg);
+  background-size: contain;
+  background-repeat: repeat;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 1.5vh;
+  margin: auto;
+}
+
+/* 導覽列 */
+.sticky_nav_bar {
+  position: sticky;
+  display: inline-block;
+  left: 2vw;
+
+  z-index: 5;
+}
+
+.nav-bar-right {
+  box-sizing: border-box;
+  height: 90vh;
+  top: 5vh;
+
+  width: 10vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10vh;
+  align-items: center;
+
+  padding: 5vh 0;
+
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 20px 30px rgb(0 0 0 / 10%);
+  opacity: 0;
+
+  transition: 1s;
+}
+
+.sticky_nav_bar_margin {
+  margin-top: calc(-90vh);
+}
+
+.nav-bar-box:hover .nav-bar-right {
+  opacity: 1;
+
+  transition: 1s;
+}
+
+.sub-logo img {
+  aspect-ratio: 1/1;
+  height: 15vh;
+}
+
+.nav-bar-right nav {
+  width: 70%;
+
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-nav {
+  /* outline: 1px solid black; */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1vh;
+}
+
+.main-nav li {
+  /* outline: 1px solid black; */
+  height: 5vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-nav li:hover {
+  background-color: rgba(141, 141, 141, 0.8);
+}
+
+.main-nav li:hover a {
+  color: rgb(255, 255, 255);
+}
+
+/* page-header */
+.page-header {
+}
+
+.page-title {
+  background-color: rgb(255, 255, 255);
+  aspect-ratio: 1/1;
+  height: 45vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 10vh;
+  right: 10%;
+}
+
+.page-title-box {
+  aspect-ratio: 1/1;
+  height: 30vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title-box span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 30vh;
+
+  font-family: "title-font";
+  font-size: 5vh;
+  letter-spacing: 1vh;
+}
+
+.page-banner {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.page-banner div {
+  /* background-color: #fff; */
+
+  height: 50vh;
+  width: 100%;
+
+  background-image: url(/img/product-img/seafood-g6f5ea29d9_1280.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  background-color: rgba(226, 183, 183, 0.3);
+  background-blend-mode: color-dodge;
+
+  box-shadow: 5px 5px 60px black inset;
+}
+
+/* product-choose */
+.product-choose {
+  margin: 20vh 0;
+}
+
+.product-choose .container {
+  justify-content: end;
+}
+
+.product-content {
+  width: 60vw;
+
+  flex-direction: column;
+  row-gap: 3vh;
+}
+
+.product-title {
+  /* height: 20vh; */
+  width: 30%;
+  justify-content: center;
+  column-gap: 3vh;
+}
+
+.product-title-card {
+  aspect-ratio: 2/5;
+  height: 25vh;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  box-sizing: border-box;
+  padding: 1vh 0;
+
+  overflow-y: hidden;
+
+  right: 2vh;
+}
+
+.product-title-card > div {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0;
+}
+
+.product-title-card span {
+  display: block;
+}
+
+.product-title-card span:nth-child(1) {
+  aspect-ratio: 1/1;
+  width: 1.5vh;
+  border-radius: 1.5vh;
+
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid #000000;
+}
+
+.product-text {
+  /* height: 40vh; */ /* 先用字撐起高 */
+  width: 100%;
+
+  align-self: flex-end;
+
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 10vh;
+}
+
+.product-text p {
+  line-height: 5vh;
+  letter-spacing: 0.5vh;
+}
+
+.dec-rec-product-content {
+  background-color: rgba(238, 235, 234, 0.7);
+  background-image: url(/img/product-img/Rectangle\ 134.png);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: color-dodge;
+  box-shadow: 1px 1px 60px rgba(0, 0, 0, 0.2) inset;
+
+  position: absolute;
+  bottom: 10vh;
+  right: 10%;
+
+  z-index: -1;
+
+  width: 70%;
+  height: 70vh;
+}
+
+/* product-list-wrap */
+.product-list {
+  margin-bottom: 100px;
+}
+
+.product-list > .container {
+  justify-content: flex-end;
+  column-gap: 6vh;
+}
+
+.product-item {
+  aspect-ratio: 23/32;
+  height: 50vh;
+
+  /* box-sizing: border-box; */
+  /* padding: 1.5vh; */
+
+  background: #fffffa;
+  box-shadow: 0px 0px 3.5px 1.5px rgba(0, 0, 0, 0.25);
+
+  flex-direction: column;
+}
+
+.product-item-pic {
+  /* width: 100% */
+  height: 50%;
+  margin: 1.5vh;
+}
+
+.product-item-pic img {
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.product-item-text {
+  height: 50%;
+
+  padding: 1vh;
+
+  flex-direction: column;
+}
+
+.item-header {
+  width: 20%;
+
+  padding: 1vh 0;
+
+  align-items: center;
+  column-gap: 3vh;
+}
+
+.item-header span:nth-child(1) {
+  border: 2px solid rgba(186, 0, 0, 0.8);
+  border-radius: 11px;
+
+  padding: 7px 1px;
+
+  font-family: "title-font";
+  color: rgba(186, 0, 0, 0.8);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.item-header span:nth-child(2) {
+  border: 2px solid rgba(186, 0, 0, 0.8);
+  border-radius: 29px;
+
+  padding: 5px;
+
+  font-family: "title-font";
+  color: rgba(186, 0, 0, 0.8);
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.25);
+  font-size: 24px;
+  text-align: center;
+  line-height: 24px;
+}
+
+.item-main {
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin: 1vh 0;
+  padding: 0 1vh;
+
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.item-main h3 {
+  font-family: "text-font";
+  font-size: 32px;
+  letter-spacing: 1vh;
+}
+
+.item-main-price {
+  flex-direction: column;
+  row-gap: 1vh;
+}
+
+.item-main-price span:nth-child(1) {
+  align-self: flex-end;
+  font-family: "text-font";
+  font-size: 16px;
+  letter-spacing: 6px;
+}
+
+.item-main-price span:nth-child(2) {
+  align-self: flex-end;
+  font-family: "title-font";
+  color: rgba(186, 0, 0, 0.8);
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+
+  box-sizing: border-box;
+  padding-left: 1vh;
+}
+
+.item-footer {
+  width: 10%;
+
+  justify-content: flex-end;
+  align-items: center;
+
+  /* box-sizing: border-box;
+  padding-right: 1vh; */
+
+  column-gap: 2vh;
+}
+
+.item-footer img {
+  width: 3vh;
+}
+
+.dec-rec-product-list {
+  width: 80%;
+  height: 35vh;
+  background-color: rgba(183, 219, 226, 0.2);
+
+  position: absolute;
+  bottom: -10%;
+  right: 0%;
+  z-index: -1;
+}
+
+/* eat-fish */
+.eat-fish {
+  margin: 20vh 0;
+}
+
+.eat-fish-title {
+  margin-bottom: 8vh;
+  margin-left: 7%;
+}
+
+.eat-fish-title h2 {
+  font-family: "text-font";
+  font-size: 42px;
+  letter-spacing: 1vh;
+
+  display: inline-block;
+}
+
+.eat-fish-content {
+  flex-direction: column;
+  row-gap: 10vh;
+}
+
+.eat-fish-content-top {
+  column-gap: 30vh;
+  margin-left: 20vh;
+}
+
+.eat-fish-content-bottom {
+  justify-content: flex-end;
+  column-gap: 30vh;
+  margin-right: 10vh;
+}
+
+.eat-fish-content img {
+  /* outline: 1px solid black; */
+  aspect-ratio: 4/3;
+  height: 25vh;
+}
+
+.eat-fish-more {
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 1vh;
+
+  margin-top: 10vh;
+}
+
+.eat-fish-more span:nth-child(1) {
+  font-family: "text-font";
+  font-size: 28px;
+  letter-spacing: 0.5vh;
+}
+
+.dec-rec-eat-fish {
+  position: absolute;
+  bottom: 20%;
+  right: 0%;
+  z-index: -1;
+
+  background-color: rgba(226, 183, 183, 0.2);
+  height: 50%;
+  width: 70%;
+}
