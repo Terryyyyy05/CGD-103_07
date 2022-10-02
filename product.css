@@ -17,7 +17,7 @@
   height: 3px;
   background-color: rgba(0, 0, 0, 0.2);
   background-blend-mode: color-dodge;
-  background-image: url(/img/line.svg);
+  background-image: url(./img/line.svg);
   background-size: contain;
   background-repeat: repeat;
   position: absolute;
@@ -160,7 +160,7 @@
   height: 50vh;
   width: 100%;
 
-  background-image: url(/img/product-img/seafood-g6f5ea29d9_1280.jpg);
+  background-image: url(./img/product-img/seafood-g6f5ea29d9_1280.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -249,7 +249,7 @@
 
 .dec-rec-product-content {
   background-color: rgba(238, 235, 234, 0.7);
-  background-image: url(/img/product-img/Rectangle\ 134.png);
+  background-image: url(./img/product-img/Rectangle\ 134.png);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

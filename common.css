@@ -19,7 +19,7 @@ img {
 body {
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: color-dodge;
-  background-image: url(/img/p0401_l.png);
+  background-image: url(./img/p0401_l.png);
 }
 
 .ot {
@@ -33,13 +33,13 @@ body {
 /* 字體設定 */
 @font-face {
   font-family: "text-font";
-  src: url(/font/KleeOne-Regular.ttf) format("opentype");
+  src: url(./font/KleeOne-Regular.ttf) format("opentype");
   font-weight: 400;
 }
 
 @font-face {
   font-family: "title-font";
-  src: url(/font/WenYue_GuDianMingChaoTi_JRFC.otf) format("opentype");
+  src: url(./font/WenYue_GuDianMingChaoTi_JRFC.otf) format("opentype");
   font-weight: 400;
 }
 
@@ -79,7 +79,7 @@ body {
   height: 2px;
   background-color: rgba(255, 255, 255, 0.6);
   background-blend-mode: color-dodge;
-  background-image: url(/img/line.svg);
+  background-image: url(./img/line.svg);
   background-repeat: repeat;
   position: absolute;
   left: 0;
@@ -100,7 +100,7 @@ body {
   height: 3px;
   background-color: rgba(255, 255, 255, 0.1);
   background-blend-mode: color-dodge;
-  background-image: url(/img/line.svg);
+  background-image: url(./img/line.svg);
   background-size: contain;
   background-repeat: repeat;
   position: absolute;
@@ -154,7 +154,7 @@ body {
   height: 3px;
   background-color: rgba(255, 255, 255, 0.4);
   background-blend-mode: color-dodge;
-  background-image: url(/img/line.svg);
+  background-image: url(./img/line.svg);
   background-size: contain;
   background-repeat: repeat;
   position: absolute;

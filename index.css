@@ -121,7 +121,7 @@
   height: 3px;
   background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: color-dodge;
-  background-image: url(/img/line.svg);
+  background-image: url(./img/line.svg);
   background-size: contain;
   background-repeat: repeat;
   position: absolute;
@@ -324,7 +324,7 @@ main:hover .nav-bar-right {
   display: block;
   width: 86vw;
   height: 5vw;
-  background-image: url(/img/wave.svg);
+  background-image: url(./img/wave.svg);
   background-size: contain;
 }
 
@@ -710,7 +710,7 @@ main:hover .nav-bar-right {
   height: 3px;
   background-color: rgba(99, 99, 99, 0.1);
   background-blend-mode: color-dodge;
-  background-image: url(/img/line.svg);
+  background-image: url(./img/line.svg);
   background-size: contain;
   background-repeat: repeat;
   position: absolute;
