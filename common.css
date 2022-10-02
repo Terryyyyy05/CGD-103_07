@@ -12,6 +12,11 @@
   margin-left: calc(95vw - 1200px);
 }
 
+.sr-container {
+  max-width: 1200px;
+  margin-left: calc(90vw - 1200px);
+}
+
 img {
   vertical-align: top;
 }
@@ -45,7 +50,14 @@ body {
 
 .nav_menu_font {
   font-family: "text-font";
-  font-size: 3vh;
+  font-size: 24px;
+
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.sub-nav li {
+  font-family: "text-font";
+  font-size: 18px;
 
   color: rgba(0, 0, 0, 0.8);
 }

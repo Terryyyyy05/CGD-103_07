@@ -1,13 +1,18 @@
 /* 字體設定 */
 .product-text p {
   font-family: "text-font";
-  font-size: 3vh;
+  font-size: 20px;
 }
 
 .product-title-card span:nth-child(2) {
   font-family: "title-font";
-  font-size: 5vh;
+  font-size: 32px;
   letter-spacing: 1vh;
+}
+
+.item-footer span {
+  font-family: "text-title";
+  font-size: 16px;
 }
 
 /* decoration */
@@ -143,7 +148,7 @@
   line-height: 30vh;
 
   font-family: "title-font";
-  font-size: 5vh;
+  font-size: 38px;
   letter-spacing: 1vh;
 }
 
@@ -257,13 +262,13 @@
   box-shadow: 1px 1px 60px rgba(0, 0, 0, 0.2) inset;
 
   position: absolute;
-  bottom: 10vh;
+  bottom: -1vh;
   right: 10%;
 
   z-index: -1;
 
   width: 70%;
-  height: 70vh;
+  height: 50vh;
 }
 
 /* product-list-wrap */
