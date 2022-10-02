@@ -1,4 +1,4 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -19,6 +19,10 @@ html{
 .sr-container {
   max-width: 1200px;
   margin-left: calc(90vw - 1200px);
+}
+
+a {
+  color: unset;
 }
 
 img {
