@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css-reset.css" />
+    <link rel="stylesheet" href="./public/css/css_reset/css-reset.css" />
     <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./inner-common.css" />
     <link rel="stylesheet" href="./fishing.css" />
+    <script src="./public/js/jquery-3.6.1.js"></script>
+    <script src="./app.js"></script>
+    <script src="./app-fishing.js"></script>
   </head>
   <body>
-    <!-- footer -->
     <div class="nav-bar-box">
       <section class="nav-bar-right sticky_nav_bar">
         <a href="./index.html">
           <div class="sub-logo">
-            <img src="./img/logo.png" alt="" />
+            <img src="./public/img/logo.png" alt="" />
           </div>
         </a>
         <nav>
@@ -30,28 +33,153 @@
               <a class="nav_menu_font" href="./fishing.html">海釣預定</a>
             </li>
             <li>
-              <a class="nav_menu_font" href="">料理食譜</a>
+              <a class="nav_menu_font" href="./recipe.html">料理食譜</a>
             </li>
           </ul>
           <div class="sub-nav">
             <ul>
               <li>
                 購物車
-                <span><img src="./img/icon.png" alt="購物車" /></span>
+                <span><img src="./public/img/icon.png" alt="購物車" /></span>
               </li>
               <li>
                 會員登入
-                <span><img src="./img/icon.png" alt="會員登入" /></span>
+                <span><img src="./public/img/icon.png" alt="會員登入" /></span>
               </li>
             </ul>
           </div>
         </nav>
       </section>
+      <input type="checkbox" id="menu-switch" />
+
+      <!-- header -->
       <header class="sticky_nav_bar_margin">
-        <section class="page-header">
+        <nav class="nav-bar-smart">
+          <!-- --------------------- -->
+          <div class="nav-menu-smart">
+            <div class="m-nav-container">
+              <div class="m-nav-row title_dec">
+                <div class="nav-left"></div>
+                <div class="nav-right">
+                  <span class="nav-left-font"> 會員登入 </span>
+                </div>
+              </div>
+              <div class="m-nav-row title_dec" id="m-index">
+                <div class="nav-left title_dec">
+                  <span class="nav-left-font">關於我們</span>
+                </div>
+                <div class="nav-right">
+                  <div class="nav-right-content title_dec">
+                    <span class="nav-right-font">品牌故事</span>
+                    <div class="nav-right-icon">
+                      <img src="./public/img/icon-2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="nav-right-content title_dec">
+                    <span class="nav-right-font">合作漁船</span>
+                    <div class="nav-right-icon">
+                      <img src="./public/img/icon-2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="nav-right-content title_dec">
+                    <span class="nav-right-font">營業資訊</span>
+                    <div class="nav-right-icon">
+                      <img src="./public/img/icon-2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-nav-row title_dec" id="m-product">
+                <div class="nav-left title_dec">
+                  <span class="nav-left-font">魚貨直銷</span>
+                </div>
+                <div class="nav-right">
+                  <div class="nav-right-content title_dec">
+                    <span class="nav-right-font">現撈</span>
+                    <div class="nav-right-icon">
+                      <img src="./public/img/icon-2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="nav-right-content title_dec">
+                    <span class="nav-right-font">極凍</span>
+                    <div class="nav-right-icon">
+                      <img src="./public/img/icon-2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-nav-row title_dec" id="m-fishing">
+                <div class="nav-left title_dec">
+                  <span class="nav-left-font">海釣預定</span>
+                </div>
+                <div class="nav-right">
+                  <div class="nav-right-content title_dec">
+                    <span class="nav-right-font">海釣預定</span>
+                    <div class="nav-right-icon">
+                      <img src="./public/img/icon-2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="m-nav-row title_dec" id="m-recipe">
+                <div class="nav-left title_dec">
+                  <span class="nav-left-font">料理食譜</span>
+                </div>
+                <div class="nav-right">
+                  <div class="nav-right-content title_dec">
+                    <span class="nav-right-font">蒸</span>
+                    <div class="nav-right-icon">
+                      <img src="./public/img/icon-2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="nav-right-content title_dec">
+                    <span class="nav-right-font">煮</span>
+                    <div class="nav-right-icon">
+                      <img src="./public/img/icon-2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="nav-right-content title_dec">
+                    <span class="nav-right-font">煎</span>
+                    <div class="nav-right-icon">
+                      <img src="./public/img/icon-2.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="nav-right-content title_dec">
+                    <span class="nav-right-font">考</span>
+                    <div class="nav-right-icon">
+                      <img src="./public/img/icon-2.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- --------------------- -->
+          <div class="nav-button-wrap">
+            <a href="" class="cart-button">
+              購物車
+              <span> (0) </span>
+            </a>
+            <div class="border_h border_no_pic">
+              <label for="menu-switch" class="hb">
+                <div class="button-menu border_v border_no_pic">
+                  <div class="button-menu-line">
+                    <span class="button-line"></span>
+                    <span class="button-line"></span>
+                    <span class="button-line"></span>
+                  </div>
+                  <span>選單</span>
+                </div>
+              </label>
+            </div>
+          </div>
+        </nav>
+        <section class="page-header relative">
           <div class="page-title">
             <div class="page-title-box border_h">
-              <span class="border_v vertical_rl">海釣預定 </span>
+              <div class="border_v">
+                <span class="vertical_rl"> 海釣預定 </span>
+              </div>
             </div>
           </div>
           <div class="page-banner">
@@ -59,102 +187,418 @@
           </div>
         </section>
       </header>
-      <main style="height: 200vh">
+      <main>
+        <div class="sticky">
+          <span>海釣<br />預定</span>
+        </div>
+        <section class="fishing-feature-wrap sticky_margin">
+          <div class="container">
+            <div class="feature-content">
+              <div class="feature-paper">
+                <div class="feature-pic border_h">
+                  <div class="border_v">
+                    <img
+                      src="./public/img/fishing-img/fishing-feature-pic.png"
+                      alt=""
+                    />
+                    <div class="feature-text vertical_rl">
+                      <div>
+                        <p>經驗豐富的船長</p>
+                        <br />
+                        <p>將會細心引導及教學</p>
+                        <br />
+                        <p>第一次釣魚也可以放心享受</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-tags">
+                <div class="tag-item">
+                  <span></span>
+                  <span>初學者友善</span>
+                </div>
+                <div class="tag-item">
+                  <span></span>
+                  <span>輕鬆空手參加</span>
+                </div>
+                <div class="tag-item">
+                  <span></span>
+                  <span>魚貨免費處理</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dec-item">
+            <div class="dec-line"></div>
+          </div>
+        </section>
+
         <section class="carousel">
-          <div class="c_container">
+          <div class="container">
             <input type="radio" name="slider" id="item-1" checked />
             <input type="radio" name="slider" id="item-2" />
             <input type="radio" name="slider" id="item-3" />
             <input type="radio" name="slider" id="item-4" />
             <input type="radio" name="slider" id="item-5" />
 
-            <div class="c_cards">
-              <label class="c_card" for="item-1" id="boat-1">
-                <img class="c_img" src="./img/boat-img/boat-2.jpg" alt="" />
-                <p class="c_text">
-                  梅利號船隻介紹blablablablablablalblalblablalb
-                </p>
-              </label>
-              <label class="c_card" for="item-2" id="boat-2">
-                <img class="c_img" src="./img/boat-img/boat-t.jfif" alt="" />
-                <p class="c_text">千陽號blalblablalblalblablalblablba</p>
-              </label>
-              <label class="c_card" for="item-3" id="boat-3">
-                <img class="c_img" src="./img/boat-img/boat-t.jpg" alt="" />
-                <p class="c_text">鐵達尼號沈船了嗚嗚嗚嗚嗚嗚嗚嗚</p>
-              </label>
-              <label class="c_card" for="item-4" id="boat-4">
-                <img class="c_img" src="./img/boat-img/boat-b.jpg" alt="" />
-                <p class="c_text">傑克船長在嗎blalbalblabllablba</p>
-              </label>
-              <label class="c_card" for="item-5" id="boat-5">
-                <img class="c_img" src="./img/boat-img/boat-q.jpg" alt="" />
-                <p class="c_text">我ok你先上</p>
-              </label>
+            <div class="choose-card-wrap relative">
+              <div class="choose-card-title border_h">
+                <div class="border_vl flex">
+                  <!-- flex 不加 手機板padding會跑版 -->
+                  <h2 class="vertical_rl">挑選船隻</h2>
+                </div>
+              </div>
+              <div class="choose-card-dec relative">
+                <div class="wooden-clips title_dec">
+                  <div class="wooden-clip"></div>
+                  <div class="wooden-clip"></div>
+                  <div class="wooden-clip"></div>
+                  <div class="wooden-clip"></div>
+                </div>
+              </div>
+              <div class="c_cards">
+                <label for="item-1" class="c_card border_h" id="boat-1">
+                  <div class="border_v">
+                    <img
+                      class="c_img"
+                      src="./public/img/boat-img/boat-2.jpg"
+                      alt=""
+                    />
+                  </div>
+                </label>
+                <label class="c_card border_h" for="item-2" id="boat-2">
+                  <div class="border_v">
+                    <img
+                      class="c_img"
+                      src="./public/img/boat-img/boat-t.jfif"
+                      alt=""
+                    />
+                  </div>
+                </label>
+                <label class="c_card border_h" for="item-3" id="boat-3">
+                  <div class="border_v">
+                    <img
+                      class="c_img"
+                      src="./public/img/boat-img/boat-t.jpg"
+                      alt=""
+                    />
+                  </div>
+                </label>
+                <label class="c_card border_h" for="item-4" id="boat-4">
+                  <div class="border_v">
+                    <img
+                      class="c_img"
+                      src="./public/img/boat-img/boat-b.jpg"
+                      alt=""
+                    />
+                  </div>
+                </label>
+                <label class="c_card border_h" for="item-5" id="boat-5">
+                  <div class="border_v">
+                    <img
+                      class="c_img"
+                      src="./public/img/boat-img/boat-q.jpg"
+                      alt=""
+                    />
+                  </div>
+                </label>
+              </div>
             </div>
-            <form class="c_booking border_h">
-              <div class="border_v">
-                <div class="upper-part">
-                  <div class="info-area" id="test">
-                    <label class="song-info" id="boat-info-1">
-                      <div class="title">黃金梅利號</div>
-                      <div class="sub-line">
-                        <div class="subtitle">遠洋</div>
-                        <div class="type">海盜船</div>
-                      </div>
+
+            <!-- booking-wrap -->
+            <form class="booking-wrap relative">
+              <div class="wooden-clip"></div>
+              <div class="booking-ship-context">
+                <div class="ship-name relative">
+                  <div class="move-box">
+                    <label class="move-box-item" id="boat-info-1">
+                      漁展26號
                     </label>
-                    <label class="song-info" id="boat-info-2">
-                      <div class="title">千陽號</div>
-                      <div class="sub-line">
-                        <div class="subtitle">遠洋</div>
-                        <div class="type">海盜船</div>
-                      </div>
+                    <label class="move-box-item" id="boat-info-2">
+                      漁展27號
                     </label>
-                    <label class="song-info" id="boat-info-3">
-                      <div class="title">鐵達尼號</div>
-                      <div class="sub-line">
-                        <div class="subtitle">遠洋</div>
-                        <div class="type">在海底</div>
-                      </div>
+                    <label class="move-box-item" id="boat-info-3">
+                      漁展28號
                     </label>
-                    <label class="song-info" id="boat-info-4">
-                      <div class="title">黑珍珠號</div>
-                      <div class="sub-line">
-                        <div class="subtitle">遠洋</div>
-                        <div class="type">海盜船</div>
-                      </div>
+                    <label class="move-box-item" id="boat-info-4">
+                      漁展29號
                     </label>
-                    <label class="song-info" id="boat-info-5">
-                      <div class="title">竹筏SR</div>
-                      <div class="sub-line">
-                        <div class="subtitle">岸邊</div>
-                        <div class="type">小心安全</div>
-                      </div>
+                    <label class="move-box-item" id="boat-info-5">
+                      漁展30號
                     </label>
                   </div>
                 </div>
-                <div class="c_booking_paper">
-                  <div class="paper_column">
-                    <h3>人數確認</h3>
-                    <input type="text" />
+                <div class="ship-description border_h">
+                  <div class="ship-target-fish title_dec">
+                    <span>目標漁種</span>
+                    <span>紅甘、鬼頭刀</span>
                   </div>
-                  <div class="paper_column">
-                    <h3>日期確認</h3>
-                    <input type="text" />
+                  <div class="ship-target-ocean title_dec">
+                    <span>垂釣海域</span>
+                    <span>北海岸</span>
                   </div>
-                  <div class="paper_column">
-                    <h3>租借設備</h3>
-                    <input type="text" />
+                  <div class="ship-max-people title_dec">
+                    <span>載客量</span>
+                    <span>50人</span>
                   </div>
-                  <div class="paper_column">
-                    <h3>保險選擇</h3>
-                    <input type="text" />
-                  </div>
-                  <div class="paper_column">
-                    <h3>餐點葷素</h3>
-                    <input type="text" />
+                  <div class="ship-time-spend title_dec">
+                    <span>釣程</span>
+                    <span>九小時</span>
                   </div>
                 </div>
+              </div>
+              <div class="booking-content">
+                <div class="booking-description">
+                  <div class="booking-month">
+                    <span class="month">10月</span>
+                    <span class="next-month"> next month </span>
+                  </div>
+                  <div class="booking-notice">
+                    <span>開始時間：0630</span>
+                    <span>
+                      <span>O</span>
+                      有空位
+                    </span>
+                  </div>
+                </div>
+                <table class="booking-date">
+                  <thead>
+                    <tr>
+                      <th>日</th>
+                      <th>一</th>
+                      <th>二</th>
+                      <th>三</th>
+                      <th>四</th>
+                      <th>五</th>
+                      <th>六</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="clendar-day">
+                          <span>25</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>26</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>27</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>28</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>29</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>30</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>1</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="clendar-day">
+                          <span>2</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>3</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>4</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>5</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>6</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>7</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>8</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>9</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>10</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>11</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>12</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>13</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>14</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>15</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>16</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>17</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>18</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>19</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>20</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>21</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>22</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>23</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>24</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>25</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>26</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>27</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>28</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day have-time">
+                          <span>29</span>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="clendar-day">
+                          <span>30</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>31</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>1</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>2</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>3</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>4</span>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="clendar-day">
+                          <span>5</span>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </form>
           </div>
@@ -162,15 +606,16 @@
       </main>
     </div>
 
+    <!-- footer -->
     <footer>
       <div class="f-container">
         <div class="f-one title_dec">
-          <img src="./img/f-logo.png" alt="" />
+          <img src="./public/img/f-logo.png" alt="" />
           <div class="follow-us">
             <span>Follow us</span>
             <div class="icon">
-              <img src="./img/facebook_.png" alt="" />
-              <img src="./img/instagram2.png" alt="" />
+              <img src="./public/img/facebook_.png" alt="" />
+              <img src="./public/img/instagram2.png" alt="" />
             </div>
           </div>
         </div>
@@ -183,14 +628,14 @@
               <span class="f-title-font">關於運送</span>
               <div class="f-text">
                 <span class="f-text-font">關於運送</span>
-                <img src="./img/icon-2.png" alt="" />
+                <img src="./public/img/icon-2.png" alt="" />
               </div>
             </div>
             <div class="payment">
               <span class="f-title-font">付款方式</span>
               <div class="f-text">
                 <span class="f-text-font">信用卡、轉帳服務</span>
-                <img src="./img/icon-2.png" alt="" />
+                <img src="./public/img/icon-2.png" alt="" />
               </div>
             </div>
           </div>
@@ -204,7 +649,7 @@
               <span class="f-title-font">辦公地點</span>
               <div class="f-text">
                 <span class="f-text-font">基隆市中正區</span>
-                <img src="./img/icon-2.png" alt="" />
+                <img src="./public/img/icon-2.png" alt="" />
               </div>
             </div>
             <div class="payment title_dec">
@@ -213,14 +658,14 @@
                 <span class="f-text-font"
                   >02-25348888<br />受理時間：平日9:00~17:00</span
                 >
-                <img src="./img/icon-2.png" alt="" />
+                <img src="./public/img/icon-2.png" alt="" />
               </div>
             </div>
             <div class="payment">
               <span class="f-title-font">留言詢問</span>
               <div class="f-text">
                 <span class="f-text-font">前往留言表格</span>
-                <img src="./img/icon-2.png" alt="" />
+                <img src="./public/img/icon-2.png" alt="" />
               </div>
             </div>
           </div>

@@ -1,0 +1,145 @@
+/* nav */
+.nav-bar-right {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1368px) {
+  .sticky_nav_bar_margin {
+    margin-top: calc(-90vh);
+  }
+}
+
+.nav-bar-box:hover .nav-bar-right {
+  opacity: 1;
+  left: 2vw;
+  transition: 1s;
+}
+
+/* page-header */
+.page-header {
+}
+
+.page-title {
+  background-color: #f8f8f8;
+  aspect-ratio: 1/1;
+  width: 25%;
+  max-width: 350px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 40%;
+  right: 10%;
+  z-index: 3;
+}
+
+.page-title-box {
+  aspect-ratio: 1/1;
+  width: 70%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title-box > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "title-font";
+  font-size: 3.6rem;
+  letter-spacing: 1rem;
+}
+
+.page-banner {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* .page-banner div {
+  height: 50vh;
+  width: 100%;
+  position: relative;
+
+  background-image: url(./public/img/product-img/seafood-g6f5ea29d9_1280.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+
+  box-shadow: 5px 5px 60px black inset;
+} */
+
+/* .page-banner div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(226, 183, 183, 0.3);
+  z-index: 2;
+} */
+
+/* ========== */
+/* tab-column */
+/* ========== */
+@media screen and (max-width: 1367px) {
+  .page-banner div {
+    background-attachment: unset;
+  }
+}
+
+/* ======= */
+/* tab-row */
+/* ======= */
+@media screen and (max-width: 1025px) {
+  .page-title {
+    width: 35%;
+    bottom: 30%;
+    right: 10%;
+  }
+
+  .page-banner {
+    height: 50vh;
+  }
+
+  .page-banner div {
+    height: 30vh;
+  }
+
+  .page-title-box > div {
+    font-size: 4rem;
+  }
+}
+
+/* ====== */
+/* mobile */
+/* ====== */
+@media screen and (max-width: 767px) {
+  .page-title {
+    width: 60%;
+    bottom: 40%;
+    margin: auto;
+    left: 0%;
+    right: 0%;
+  }
+
+  .page-banner div {
+    height: 50vh;
+
+    background-attachment: unset;
+  }
+
+  .page-banner {
+    height: 80vh;
+  }
+}

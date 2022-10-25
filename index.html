@@ -5,21 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>漁製今時</title>
-    <link rel="stylesheet" href="./css-reset.css" />
+    <link rel="stylesheet" href="./public/css/css_reset/css-reset.css" />
     <link rel="stylesheet" href="./common.css" />
     <link rel="stylesheet" href="./index.css" />
+    <script src="./public/js/jquery-3.6.1.js"></script>
+    <script src="./app.js"></script>
+    <script src="./app-index.js"></script>
   </head>
   <body>
+    <!-- loading -->
+    <div id="preloader">
+      <img src="./public/img/logo.png" />
+    </div>
     <!-- header -->
+    <input type="checkbox" id="menu-switch" />
     <header>
-      <div class="viedo-banner">
-        <video autoplay muted loop src="./img/viedo.mp4"></video>
-      </div>
+      <nav class="nav-bar-smart">
+        <!-- --------------------- -->
+        <div class="nav-menu-smart">
+          <div class="m-nav-container">
+            <div class="m-nav-row title_dec">
+              <div class="nav-left"></div>
+              <div class="nav-right">
+                <span class="nav-left-font"> 會員登入 </span>
+              </div>
+            </div>
+            <div class="m-nav-row title_dec" id="m-index">
+              <div class="nav-left title_dec">
+                <span class="nav-left-font">關於我們</span>
+              </div>
+              <div class="nav-right">
+                <div class="nav-right-content title_dec">
+                  <span class="nav-right-font">品牌故事</span>
+                  <div class="nav-right-icon">
+                    <img src="./public/img/icon-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="nav-right-content title_dec">
+                  <span class="nav-right-font">合作漁船</span>
+                  <div class="nav-right-icon">
+                    <img src="./public/img/icon-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="nav-right-content title_dec">
+                  <span class="nav-right-font">營業資訊</span>
+                  <div class="nav-right-icon">
+                    <img src="./public/img/icon-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-nav-row title_dec" id="m-product">
+              <div class="nav-left title_dec">
+                <span class="nav-left-font">魚貨直銷</span>
+              </div>
+              <div class="nav-right">
+                <div class="nav-right-content title_dec">
+                  <span class="nav-right-font">現撈</span>
+                  <div class="nav-right-icon">
+                    <img src="./public/img/icon-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="nav-right-content title_dec">
+                  <span class="nav-right-font">極凍</span>
+                  <div class="nav-right-icon">
+                    <img src="./public/img/icon-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-nav-row title_dec" id="m-fishing">
+              <div class="nav-left title_dec">
+                <span class="nav-left-font">海釣預定</span>
+              </div>
+              <div class="nav-right">
+                <div class="nav-right-content title_dec">
+                  <span class="nav-right-font">海釣預定</span>
+                  <div class="nav-right-icon">
+                    <img src="./public/img/icon-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-nav-row title_dec" id="m-recipe">
+              <div class="nav-left title_dec">
+                <span class="nav-left-font">料理食譜</span>
+              </div>
+              <div class="nav-right">
+                <div class="nav-right-content title_dec">
+                  <span class="nav-right-font">蒸</span>
+                  <div class="nav-right-icon">
+                    <img src="./public/img/icon-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="nav-right-content title_dec">
+                  <span class="nav-right-font">煮</span>
+                  <div class="nav-right-icon">
+                    <img src="./public/img/icon-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="nav-right-content title_dec">
+                  <span class="nav-right-font">煎</span>
+                  <div class="nav-right-icon">
+                    <img src="./public/img/icon-2.png" alt="" />
+                  </div>
+                </div>
+                <div class="nav-right-content title_dec">
+                  <span class="nav-right-font">考</span>
+                  <div class="nav-right-icon">
+                    <img src="./public/img/icon-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- --------------------- -->
+        <div class="nav-button-wrap">
+          <a href="" class="cart-button">
+            購物車
+            <span> (0) </span>
+          </a>
+          <div class="border_h border_no_pic">
+            <label for="menu-switch" class="hb">
+              <div class="button-menu border_v border_no_pic">
+                <div class="button-menu-line">
+                  <span class="button-line"></span>
+                  <span class="button-line"></span>
+                  <span class="button-line"></span>
+                </div>
+                <span>選單</span>
+              </div>
+            </label>
+          </div>
+        </div>
+      </nav>
+
+      <section class="viedo-banner">
+        <video autoplay muted loop src="./public/img/viedo.mp4"></video>
+      </section>
       <div class="index-nav-real">
         <div class="banner-wrap">
           <h1 class="main-logo">
-            <a href="">
-              <img src="./img/logo.png" alt="漁製今時Logo" />
+            <a href="./index.html">
+              <img src="./public/img/logo.png" alt="漁製今時Logo" />
             </a>
           </h1>
           <div class="index-menu">
@@ -28,7 +157,7 @@
                 <a href="#item-2">
                   極凍鮮魚
                   <span>
-                    <img src="./img/icon.png" alt="" />
+                    <img src="./public/img/icon.png" alt="" />
                   </span>
                 </a>
               </li>
@@ -36,7 +165,7 @@
                 <a href="#item-1">
                   現撈海魚
                   <span>
-                    <img src="./img/icon.png" alt="" />
+                    <img src="./public/img/icon.png" alt="" />
                   </span>
                 </a>
               </li>
@@ -44,7 +173,7 @@
                 <a href="#fishing-wrap">
                   海釣預定
                   <span>
-                    <img src="./img/icon.png" alt="" />
+                    <img src="./public/img/icon.png" alt="" />
                   </span>
                 </a>
               </li>
@@ -52,50 +181,13 @@
           </div>
         </div>
       </div>
-
-      <!-- <nav class="header-nav">
-        <div class="main-nav">
-          <div class="sub-logo">
-            
-            <img src="" alt="" />
-          </div>
-          <div class="main-menu">
-            <ul>
-              <li>
-                <a class="nav_menu_font" href="">關於我們</a>
-              </li>
-              <li>
-                <a class="nav_menu_font" href="">魚貨直銷</a>
-              </li>
-              <li>
-                <a class="nav_menu_font" href="">海釣預定</a>
-              </li>
-              <li>
-                <a class="nav_menu_font" href="">料理食譜</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="sub-menu nav_menu_font">
-          <ul>
-            <li>
-              購物車
-              <span><img src="/img/icon.png" alt="購物車" /></span>
-            </li>
-            <li>
-              會員登入
-              <span><img src="/img/icon.png" alt="會員登入" /></span>
-            </li>
-          </ul>
-        </div>
-      </nav> -->
     </header>
     <main>
       <!-- nav-bar -->
       <section class="nav-bar-right sticky_nav_bar">
         <a href="./index.html">
           <div class="sub-logo">
-            <img src="./img/logo.png" alt="" />
+            <img src="./public/img/logo.png" alt="" />
           </div>
         </a>
         <nav>
@@ -110,7 +202,7 @@
               <a class="nav_menu_font" href="./fishing.html">海釣預定</a>
             </li>
             <li>
-              <a class="nav_menu_font" href="">料理食譜</a>
+              <a class="nav_menu_font" href="./recipe.html">料理食譜</a>
             </li>
           </ul>
 
@@ -118,28 +210,27 @@
             <ul>
               <li>
                 購物車
-                <span><img src="./img/icon.png" alt="購物車" /></span>
+                <span><img src="./public/img/icon.png" alt="購物車" /></span>
               </li>
               <li>
                 會員登入
-                <span><img src="./img/icon.png" alt="會員登入" /></span>
+                <span><img src="./public/img/icon.png" alt="會員登入" /></span>
               </li>
             </ul>
           </div>
         </nav>
       </section>
 
-      <!-- <div class="sub-logo sticky_logo">
-        <img src="/img/logo.png" alt="" />
-      </div> -->
       <!-- about-wrap -->
       <section class="about-wrap sticky_nav_bar_margin">
-        <div class="sticky vertical_rl">關於我們</div>
-        <div class="sr-container sticky_margin">
+        <div class="sticky">
+          <span>關於<br />理念</span>
+        </div>
+        <div class="container sticky_margin">
           <div class="dec-item">
             <div class="dec-line"></div>
           </div>
-          <div class="about-text">
+          <div class="about-text slideInA">
             <p>
               漆黑清晨的海面<br />嘿喲! 嘿喲! 嗨喲!<br />捕啊撈啊<br />捕上船的是船手的青春年華<br />撈上岸的是舵手的堅持毅力
             </p>
@@ -168,8 +259,10 @@
 
       <!-- product-wrap -->
       <section class="product-wrap">
-        <div class="sticky vertical_rl">魚貨直銷</div>
-        <div class="sr-container sticky_margin">
+        <div class="sticky">
+          <span>魚貨<br />直銷</span>
+        </div>
+        <div class="container sticky_margin">
           <div class="dec-item">
             <div class="dec-line"></div>
           </div>
@@ -181,17 +274,27 @@
               <div class="product-content">
                 <div class="product-pic border_h">
                   <div class="img_wrap border_v">
-                    <img src="./img/product/p-img-1.png" />
+                    <img src="./public/img/index/index-product-1.png" />
                   </div>
                 </div>
-                <a href="./product.html">
-                  <div class="product-text border_h">
-                    <p class="vertical_rl">
-                      當日現撈冰鮮直送<br />船長、漁會專家挑選現撈肥美海魚<br />漁會加工廠貼心去鰓鱗、內臟<br />未經急速冷凍程序<br />中午上岸，低溫快速出貨隔日到家<br />一天一海魚，營養百分百
-                    </p>
-                    <span>
-                      <img src="./img/icon.png" alt="" />
-                    </span>
+                <a href="./product.html" class="j-open">
+                  <div class="product-text border_h scroll-line">
+                    <div class="product-text-paper">
+                      <div class="product-pic-mobile border_h">
+                        <div class="img_wrap border_v">
+                          <img src="./public/img/index/index-product-1.png" />
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <p class="vertical_rl">
+                          <span class="text-bold">當日現撈冰鮮直送</span
+                          >船長等專家挑選現撈肥美海魚<br />漁會加工廠貼心去鰓鱗、內臟<br />未經急速冷凍程序<br />中午上岸，低溫快速出貨隔日到家<br />一天一海魚，營養百分百
+                        </p>
+                      </div>
+                      <span class="text-icon">
+                        <img src="./public/img/icon.png" alt="" />
+                      </span>
+                    </div>
                   </div>
                 </a>
               </div>
@@ -201,19 +304,30 @@
                 <h2>極鮮</h2>
               </div>
               <div class="product-content">
-                <a href="./product.html">
-                  <div class="product-text border_h">
-                    <p class="vertical_rl">
-                      嚴選魚貨現撈上岸<br />漁會加工廠貼心去鰓鱗、內臟<br />真空包裝急速冷凍藏鮮<br />料理時可放至冷藏室退冰<br />解凍後即可料理<br />一天一海魚，營養百分百
-                    </p>
-                    <span>
-                      <img src="./img/icon.png" alt="" />
-                    </span>
+                <a href="./product.html" class="j-open">
+                  <div class="product-text border_h scroll-line">
+                    <div class="product-text-paper">
+                      <div class="product-pic-mobile border_h">
+                        <div class="img_wrap border_v">
+                          <img src="./public/img/index/index-product-2.png" />
+                        </div>
+                      </div>
+                      <div class="flex">
+                        <p class="vertical_rl">
+                          <span class="text-bold">嚴選魚貨現撈上岸</span>
+
+                          漁會加工廠貼心去鰓鱗、內臟<br />真空包裝急速冷凍藏鮮<br />料理時可放至冷藏室退冰<br />解凍後即可料理<br />一天一海魚，營養百分百
+                        </p>
+                      </div>
+                      <span class="text-icon">
+                        <img src="./public/img/icon.png" alt="" />
+                      </span>
+                    </div>
                   </div>
                 </a>
                 <div class="product-pic border_h">
                   <div class="img_wrap border_v">
-                    <img src="./img/product/p-img-2.png" />
+                    <img src="./public/img/index/index-product-2.png" />
                   </div>
                 </div>
               </div>
@@ -225,8 +339,10 @@
 
       <!-- fishing-wrap -->
       <section class="fishing-wrap" id="fishing-wrap">
-        <div class="sticky vertical_rl">海釣預定</div>
-        <div class="sr-container sticky_margin">
+        <div class="sticky">
+          <span>海釣<br />預定</span>
+        </div>
+        <div class="container sticky_margin">
           <div class="dec-item">
             <div class="dec-line"></div>
           </div>
@@ -237,106 +353,127 @@
             <div class="booking-content">
               <div class="booking-pic border_h">
                 <div class="img_wrap border_v">
-                  <img src="./img/boat.png" />
+                  <img src="./public/img/boat.png" />
                 </div>
               </div>
-              <a href="./fishing.html">
-                <div class="booking-text border_h">
-                  <p class="vertical_rl">
-                    每月定期出海<br />提供設備租借<br />不同魚種、垂釣海域<br />均有配合船隻<br />提供現釣魚貨處理處理<br />現釣現吃！
-                  </p>
-                  <span>
-                    <img src="./img/icon.png" alt="" />
-                  </span>
+              <a href="./fishing.html" class="j-open">
+                <div class="booking-text border_h scroll-line">
+                  <div class="booking-text-paper">
+                    <div class="booking-pic-mobile border_h">
+                      <div class="img_wrap border_v">
+                        <img src="./public/img/boat.png" />
+                      </div>
+                    </div>
+                    <div>
+                      <p class="vertical_rl">
+                        <span>每月定期出海</span>不同魚種海域均有船隻<br />
+                      </p>
+                      <p class="vertical_rl">
+                        <span>提供釣具租借</span>首次參加將免費租借<br />
+                      </p>
+                      <p class="vertical_rl">
+                        <span>現場漁貨協助處理</span
+                        >協助清理魚鱗及內臟<br />帶回家即可直接料理
+                      </p>
+                    </div>
+                    <span>
+                      <img src="./public/img/icon.png" alt="" />
+                    </span>
+                  </div>
                 </div>
               </a>
             </div>
           </div>
           <div class="fishing-species dec_rec">
-            <div class="container">
-              <div class="species-content">
-                <div class="content-left">
-                  <ul class="season-card-list fishing_line">
-                    <li class="season-card border_h">
-                      <div class="card-wrap border_v">
-                        <span class="circle"></span>
-                        <span>春 (1~3月)</span>
-                      </div>
-                    </li>
-                    <li class="season-card border_h">
-                      <div class="card-wrap border_v">
-                        <span class="circle"></span>
-                        <span> 夏 (4~6月) </span>
-                      </div>
-                    </li>
-                    <li class="season-card border_h">
-                      <div class="card-wrap border_v">
-                        <span class="circle"></span>
-                        <span> 秋 (7~9月) </span>
-                      </div>
-                    </li>
-                    <li class="season-card border_h">
-                      <div class="card-wrap border_v">
-                        <span class="circle"></span>
-                        <span> 冬 (10~12月) </span>
-                      </div>
-                    </li>
-                  </ul>
-                  <div class="btn-go-fishing">
-                    <a href="./fishing.html">
-                      <span><img src="./img/icon.png" alt="" /></span>
-                      出發釣魚！
-                    </a>
+            <div class="species-content">
+              <div class="content-left j-openB">
+                <ul class="season-card-list fishing_line">
+                  <li class="season-card border_h">
+                    <div class="card-wrap border_v">
+                      <span class="circle"></span>
+                      <span>春 (1~3月)</span>
+                    </div>
+                  </li>
+                  <li class="season-card border_h j-openB">
+                    <div class="card-wrap border_v">
+                      <span class="circle"></span>
+                      <span> 夏 (4~6月) </span>
+                    </div>
+                  </li>
+                  <li class="season-card border_h j-openB">
+                    <div class="card-wrap border_v">
+                      <span class="circle"></span>
+                      <span> 秋 (7~9月) </span>
+                    </div>
+                  </li>
+                  <li class="season-card border_h j-openB">
+                    <div class="card-wrap border_v">
+                      <span class="circle"></span>
+                      <span> 冬 (10~12月) </span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="btn-go-fishing">
+                  <a href="./fishing.html">
+                    <span><img src="./public/img/icon.png" alt="" /></span>
+                    出發釣魚！
+                  </a>
+                </div>
+              </div>
+              <div class="content-right">
+                <div class="fish-list title_dec">
+                  <div class="fish-name">
+                    <span class="vertical_rl">長尾魚</span>
+                    <span></span>
+                  </div>
+                  <div class="fish-name">
+                    <span class="vertical_rl">石狗公</span>
+                    <span></span>
+                  </div>
+                  <div class="fish-name">
+                    <span class="vertical_rl">小黃魚</span>
+                    <span></span>
+                  </div>
+                  <div class="fish-name">
+                    <span class="vertical_rl">黃鯛</span>
+                    <span></span>
+                  </div>
+                  <div class="fish-name">
+                    <span class="vertical_rl">馬頭</span>
+                    <span></span>
                   </div>
                 </div>
-                <div class="content-right">
-                  <div class="fish-list title_dec">
-                    <div class="fish-name">
-                      <span class="vertical_rl">長尾魚</span>
-                      <span></span>
-                    </div>
-                    <div class="fish-name">
-                      <span class="vertical_rl">石狗公</span>
-                      <span></span>
-                    </div>
-                    <div class="fish-name">
-                      <span class="vertical_rl">小黃魚</span>
-                      <span></span>
-                    </div>
-                    <div class="fish-name">
-                      <span class="vertical_rl">黃鯛</span>
-                      <span></span>
-                    </div>
-                    <div class="fish-name">
-                      <span class="vertical_rl">馬頭</span>
-                      <span></span>
-                    </div>
-                  </div>
-                  <div class="fish-pic border_h">
-                    <div class="img_wrap border_v">
-                      <img src="./img/product/p-img-2.png" />
+                <div class="fish-pic-paper border_h">
+                  <div class="border_v">
+                    <div class="fish-pic">
+                      <div class="img_wrap">
+                        <img src="./public/img/fish-img/red-fish.png" />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
             <div class="fishing-dec-rec"></div>
           </div>
         </div>
       </section>
       <!-- recipe-wrap -->
       <section class="recipe-wrap dec_rec">
-        <div class="sticky vertical_rl">料理食譜</div>
-        <div class="sr-container sticky_margin">
+        <div class="sticky">
+          <span>料理<br />食譜</span>
+        </div>
+        <div class="container sticky_margin">
           <div class="dec-item">
             <div class="dec-line"></div>
           </div>
           <div class="recipe-description">
             <div class="left-section recipe-des_dec">
-              <p class="description-text">你台灣人怎麼沒吃過？</p>
+              <p class="description-text slideInB">你台灣人怎麼沒吃過？</p>
             </div>
             <div class="right-section recipe-des_dec">
-              <p class="description-text">
+              <p class="description-text slideInB">
                 沒吃過<br />其實我在台灣<br />沒吃過什麼海鮮<br />早年家裡經濟壓力挺大<br />其實吃海鮮是奢侈的在那
               </p>
             </div>
@@ -347,46 +484,46 @@
             </div>
             <div class="cooking-type-list">
               <div class="box">
-                <img src="./img/food-img/蒸魚.png" />
+                <img src="./public/img/food-img/蒸魚.png" />
                 <div class="cooking-type-text">
                   <div class="word border_h">
                     <span class="border_v">蒸</span>
                   </div>
                   <div class="cooking-type-description">
-                    清蒸是最能夠吃出「原味」的烹飪方式<br />只要是新鮮的海魚我們都會推薦吃吃看清蒸魚<br />在調味的話可以：薑絲、蔥絲、米酒作為基本調味的選擇<br />如果說想嘗試其他口味：酸瓜、蒜頭辣椒也是可以考慮的喔！
+                    清蒸是最能夠吃出「原味」的烹飪方式<br />新鮮的海魚我們都會推薦吃吃看清蒸魚<br />
                   </div>
                 </div>
               </div>
               <div class="box">
-                <img src="./img/food-img/魚湯.png" />
+                <img src="./public/img/food-img/魚湯.png" />
                 <div class="cooking-type-text">
                   <div class="word border_h">
                     <span class="border_v">煮</span>
                   </div>
                   <div class="cooking-type-description">
-                    大部分的魚都很適合煮魚湯，煮魚湯的關鍵在於「喝到鮮魚的鮮甜味」<br />最常在漁村吃到的是薑絲魚湯、味噌魚湯<br />另外，將根莖類的馬鈴薯、桔頭菜、白蘿蔔擇一入湯，也可以完美跟魚的鮮甜味結合甚至更香甜唷
+                    大部分的魚都很適合煮魚湯<br />煮魚湯的關鍵在於「喝到鮮魚的鮮甜味」<br />最常在漁村吃到的是薑絲魚湯、味噌魚湯
                   </div>
                 </div>
               </div>
               <div class="box">
-                <img src="./img/food-img/煎魚.png" />
+                <img src="./public/img/food-img/煎魚.png" />
                 <div class="cooking-type-text">
                   <div class="word border_h">
                     <span class="border_v">煎</span>
                   </div>
                   <div class="cooking-type-description">
-                    魚的油脂要夠肥、魚肉纖維不過於軟嫩的魚類最適合乾煎喔<br />特別推薦像是：黃雞、秋姑、肉鯽魚乾煎都是很美味的呢！
+                    魚的油脂要夠肥<br />魚肉纖維不過於軟嫩的魚類最適合乾煎喔
                   </div>
                 </div>
               </div>
               <div class="box">
-                <img src="./img/food-img/烤魚.png" />
+                <img src="./public/img/food-img/烤魚.png" />
                 <div class="cooking-type-text">
                   <div class="word border_h">
                     <span class="border_v">烤</span>
                   </div>
                   <div class="cooking-type-description">
-                    烤魚分成兩種，一種是偏日式的鹽烤方式(口感乾酥、鹹香)，最適合當假日配酒的下酒菜呢！<br />另一種是偏法式的紙包魚作法(口感濕潤、多汁)，剛從烤箱出爐的紙包魚，用手將紙包撕開，香氣撲鼻而來，讓人馬上食指大動！
+                    烤魚分成兩種<br />一種是日式的鹽烤，適合當配酒的下酒菜<br />一種是紙包魚作法，讓人食指大動
                   </div>
                 </div>
               </div>
@@ -400,17 +537,17 @@
     <footer>
       <div class="f-container">
         <div class="f-one title_dec">
-          <img src="./img/f-logo.png" alt="" />
+          <img src="./public/img/f-logo.png" alt="" />
           <div class="follow-us">
             <span>Follow us</span>
             <div class="icon">
-              <img src="./img/facebook_.png" alt="" />
-              <img src="./img/instagram2.png" alt="" />
+              <img src="./public/img/facebook_.png" alt="" />
+              <img src="./public/img/instagram2.png" alt="" />
             </div>
           </div>
         </div>
         <div class="f-two title_dec">
-          <div class="f-left">
+          <div class="f-left title_dec">
             <span class="f-title-font">常見問題</span>
           </div>
           <div class="f-right">
@@ -418,20 +555,20 @@
               <span class="f-title-font">關於運送</span>
               <div class="f-text">
                 <span class="f-text-font">關於運送</span>
-                <img src="./img/icon-2.png" alt="" />
+                <img src="./public/img/icon-2.png" alt="" />
               </div>
             </div>
             <div class="payment">
               <span class="f-title-font">付款方式</span>
               <div class="f-text">
                 <span class="f-text-font">信用卡、轉帳服務</span>
-                <img src="./img/icon-2.png" alt="" />
+                <img src="./public/img/icon-2.png" alt="" />
               </div>
             </div>
           </div>
         </div>
         <div class="f-three title_dec">
-          <div class="f-left">
+          <div class="f-left title_dec">
             <span class="f-title-font">聯絡我們</span>
           </div>
           <div class="f-right">
@@ -439,7 +576,7 @@
               <span class="f-title-font">辦公地點</span>
               <div class="f-text">
                 <span class="f-text-font">基隆市中正區</span>
-                <img src="./img/icon-2.png" alt="" />
+                <img src="./public/img/icon-2.png" alt="" />
               </div>
             </div>
             <div class="payment title_dec">
@@ -448,14 +585,14 @@
                 <span class="f-text-font"
                   >02-25348888<br />受理時間：平日9:00~17:00</span
                 >
-                <img src="./img/icon-2.png" alt="" />
+                <img src="./public/img/icon-2.png" alt="" />
               </div>
             </div>
             <div class="payment">
               <span class="f-title-font">留言詢問</span>
               <div class="f-text">
                 <span class="f-text-font">前往留言表格</span>
-                <img src="./img/icon-2.png" alt="" />
+                <img src="./public/img/icon-2.png" alt="" />
               </div>
             </div>
           </div>
