@@ -122,4 +122,17 @@ $(function () {
         }
       });
   }
+
+  /* modal */
+  $(`.have-time`).click(function () {
+    $(".modal").addClass("product-item-content_click");
+
+    $("main").addClass("opacity");
+  });
+
+  $(`.close`).click(function () {
+    $(".modal").removeClass("product-item-content_click");
+
+    $("main").removeClass("opacity");
+  });
 });
