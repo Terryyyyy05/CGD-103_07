@@ -67,7 +67,7 @@
   position: relative;
   width: 60%;
 
-  background-image: url(/public/img/product-img/product-dec-1.png);
+  background-image: url(./public/img/product-img/product-dec-1.png);
   background-size: cover;
 
   margin: 0 auto 0 240px;
